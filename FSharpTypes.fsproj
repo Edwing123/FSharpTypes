@@ -5,7 +5,7 @@
     <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup><Compile Include="TypeAbbreviations.fs" /><Compile Include="BigPicture.fs" />
+  <ItemGroup><Compile Include="Tuples.fs" /><Compile Include="TypeAbbreviations.fs" /><Compile Include="BigPicture.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
