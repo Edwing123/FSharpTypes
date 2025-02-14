@@ -3,5 +3,5 @@
 module Program =
     [<EntryPoint>]
     let main (args: array<string>) =
-        // printfn "%A" FSharpTypes.BigPicture.OK
+        printfn "%A" BigPicture.OK
         0
