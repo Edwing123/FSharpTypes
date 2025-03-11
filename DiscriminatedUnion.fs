@@ -102,3 +102,24 @@ let client1 = ClientId 1
 let (ClientId id) = client1
 
 printfn "%A" client1
+
+// Union type members.
+
+type FundsSourceKind =
+    | Credit
+    | Debit
+    | Prepaid
+
+let creditFunds = Credit
+
+if creditFunds.IsCredit then
+    printfn "It is a credit funds source."
+else if creditFunds.IsDebit then
+    printfn "It is a debit funds source."
+else if creditFunds.IsPrepaid then
+    printfn "It is a prepaid funds source."
+
+match creditFunds with
+| Credit -> printfn "It is a credit funds source."
+| Debit -> printfn "It is a debit funds source."
+| Prepaid -> printfn "It is a prepaid funds source."
